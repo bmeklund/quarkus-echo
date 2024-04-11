@@ -36,15 +36,9 @@ kind: API
 metadata:
   name: monitoring-service-api
   description: API surface for Monitoring service
-  links:
-    - url: http://monitoring-service-bmeklund-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/swagger-ui
-      title: Swagger UI
-      icon: web
-    - url: https://github.com/bmeklund/quarkus-echo/-/blob/main/src/main/resources/META-INF/openapi.yaml
-      title: API Spec
-      icon: code
 spec:
   type: openapi
   lifecycle: production
   owner: "user1"
-  system: monitoring
+    definition:
+    $text: ./openapi.yaml
