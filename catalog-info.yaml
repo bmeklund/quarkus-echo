@@ -40,5 +40,5 @@ spec:
   type: openapi
   lifecycle: production
   owner: "user1"
-    definition:
+  definition:
     $text: ./openapi.yaml
