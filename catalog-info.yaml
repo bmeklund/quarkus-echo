@@ -34,8 +34,8 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: monitoring-service-api
-  description: API surface for Monitoring service
+  name: "monitoring-service-api"
+  description: "API surface for Monitoring service"
 spec:
   type: openapi
   lifecycle: production
