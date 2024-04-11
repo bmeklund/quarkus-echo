@@ -1,0 +1,11 @@
+site_name: quarkus-echo
+site_description: Quarkus app echoing your input
+repo_url: https://github.com/bmeklund/quarkus-echo
+edit_uri: edit/main/docs
+
+plugins:
+  - techdocs-core
+
+# Note for content editors, edit only the section below
+nav:
+  - Onboard a developer to OpenShift: README.md
