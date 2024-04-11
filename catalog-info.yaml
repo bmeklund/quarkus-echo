@@ -1,0 +1,52 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: monitoring-service
+  annotations:
+    backstage.io/techdocs-ref: url:https://github.com/bmeklund/quarkus-echo
+    backstage.io/source-location: url:https://github.com/bmeklund/quarkus-echo
+  tags:
+    - java
+    - maven
+    - workshop
+  links:
+    - url: https://someurl.wheredeployed.com
+      title: Deployment
+      icon: web
+spec:
+  type: service
+  lifecycle: UAT
+  owner: "user1"
+  system: monitoring
+  providesApis:
+    - monitoring-service-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: monitoring
+  tags:
+    - backstage
+    - janus-idp
+spec:
+  owner: "user1"
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: monitoring-service-api
+  description: API surface for Monitoring service
+  links:
+    - url: http://monitoring-service-bmeklund-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/swagger-ui
+      title: Swagger UI
+      icon: web
+    - url: https://github.com/bmeklund/quarkus-echo/-/blob/main/src/main/resources/META-INF/openapi.yaml
+      title: API Spec
+      icon: code
+spec:
+  type: openapi
+  lifecycle: production
+  owner: "user1"
+  system: monitoring
+  definition:
+    $text: https://github.com/bmeklund/quarkus-echo/-/blob/main/src/main/resources/META-INF/openapi.yaml
