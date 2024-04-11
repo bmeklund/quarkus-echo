@@ -48,5 +48,3 @@ spec:
   lifecycle: production
   owner: "user1"
   system: monitoring
-  definition:
-    $text: https://github.com/bmeklund/quarkus-echo/-/blob/main/src/main/resources/META-INF/openapi.yaml
