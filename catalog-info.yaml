@@ -10,7 +10,7 @@ metadata:
     - maven
     - workshop
   links:
-    - url: https://someurl.wheredeployed.com
+    - url: http://quarkus-echo-bmeklund-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/
       title: Deployment
       icon: web
 spec:
