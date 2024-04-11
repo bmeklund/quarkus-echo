@@ -8,4 +8,4 @@ plugins:
 
 # Note for content editors, edit only the section below
 nav:
-  - Onboard a developer to OpenShift: README.md
+  - Onboard a developer to OpenShift: ../README.md
